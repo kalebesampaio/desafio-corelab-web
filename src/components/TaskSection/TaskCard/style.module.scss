@@ -9,12 +9,11 @@
   -webkit-box-shadow: 3px 2px 9px 1px rgba(0, 0, 0, 0.2);
   -moz-box-shadow: 3px 2px 9px 1px rgba(0, 0, 0, 0.2);
   box-shadow: 3px 2px 9px 1px rgba(0, 0, 0, 0.2);
+  position: relative;
 }
 .container div {
   border-bottom: 1px solid #d9d9d9;
   max-width: 100%;
-
-  position: relative;
 }
 
 .container .none {
@@ -64,4 +63,8 @@ nav svg {
   &:hover {
     color: var(--color-orange);
   }
+}
+
+.nav div button {
+  display: none;
 }

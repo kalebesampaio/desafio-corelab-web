@@ -4,6 +4,8 @@ import { MdOutlineEdit, MdOutlineStar } from "react-icons/md";
 import { IoMdColorFill } from "react-icons/io";
 import { MdClose } from "react-icons/md";
 import { Task, TaskUpdate } from "../../../pages/HomePage";
+import { useState } from "react";
+import { Dropdown } from "../../Dropdown";
 
 type Props = {
   task: Task;
@@ -18,6 +20,7 @@ export const TaskCard = ({
   updateTask,
   setEditTask,
 }: Props) => {
+  const [open, setOpen] = useState<boolean>(false);
   return (
     <li className={`${style.container} ${task.color}`}>
       <div>
@@ -37,14 +40,17 @@ export const TaskCard = ({
       </div>
       <div className={style.none}>
         <p className="paragraph">{task.description}</p>
-        <nav>
+        <nav className={style.nav}>
           <section>
             <MdOutlineEdit onClick={() => setEditTask(task)} />
-            <IoMdColorFill />
+            <IoMdColorFill onClick={() => setOpen(!open)} />
           </section>
           <MdClose onClick={() => removeTask(task)} />
         </nav>
       </div>
+      {open ? (
+        <Dropdown open={open} task={task} updateTask={updateTask} />
+      ) : null}
     </li>
   );
 };
