@@ -1,0 +1,26 @@
+:root {
+  --font-primary: "Inter", sans-serif;
+
+  --color-light-yellow: #ffe8ac;
+  --color-ligth-orange: #ffcab9;
+  --color-light-violet: #eca1ff;
+  --color-light-brown: #a99a7c;
+  --color-pale-orange: #ffe3b3;
+  --color-light-green: #b9ffdd;
+  --color-light-blue: #bae2ff;
+  --color-light-gray: #cdcdcd;
+  --color-dark-blue: #455a64;
+  --color-ship-grey: #4f4f4d;
+  --color-light-red: #f99494;
+  --color-orange: #ffa000;
+  --color-green: #daff8b;
+  --color-white: ##d9d9d9;
+  --color-gray: #979797;
+  --color-blue: #9dd6ff;
+}
+#root {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
