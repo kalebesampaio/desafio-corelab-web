@@ -1,0 +1,64 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 530px;
+
+  background-color: #ffffffff;
+
+  border-radius: 1.5rem;
+
+  margin-top: 2rem;
+
+  -webkit-box-shadow: 3px 2px 9px 1px rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: 3px 2px 9px 1px rgba(0, 0, 0, 0.2);
+  box-shadow: 3px 2px 9px 1px rgba(0, 0, 0, 0.2);
+}
+.container div {
+  border-bottom: 1px solid #d9d9d9;
+  max-width: 100%;
+
+  position: relative;
+}
+
+.container .none {
+  border-bottom: none;
+}
+
+.favorite {
+  position: absolute;
+  cursor: pointer;
+  top: 15px;
+  right: 10px;
+  background-color: inherit;
+  border: none;
+
+  font-size: 20px;
+}
+
+.inpt {
+  width: 100%;
+
+  border: none;
+  background-color: var(--color-white);
+
+  color: #000;
+
+  font-family: var(--font-primary);
+  font-size: 1rem;
+  font-weight: 400;
+
+  padding: 0.8rem;
+
+  &:focus,
+  &:focus-visible,
+  &:active {
+    border: none;
+    outline: none;
+  }
+
+  &.area {
+    resize: none;
+    height: 8rem;
+  }
+}

@@ -1,11 +1,8 @@
-import { Header } from "./components/Header";
+import "./styles/index.scss";
+import { HomePage } from "./pages/HomePage";
 
 const App = () => {
-  return (
-    <>
-      <Header />
-    </>
-  );
+  return <HomePage />;
 };
 
 export default App;
