@@ -62,3 +62,20 @@
     height: 8rem;
   }
 }
+
+.btn {
+  position: absolute;
+  cursor: pointer;
+  bottom: 5px;
+  right: 10px;
+  background-color: inherit;
+  border: none;
+  border-radius: 15px;
+
+  font-size: 1rem;
+  font-family: var(--font-primary);
+
+  &:hover {
+    background-color: var(--color-orange);
+  }
+}
