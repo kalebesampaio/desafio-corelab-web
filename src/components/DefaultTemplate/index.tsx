@@ -1,7 +1,7 @@
 import { Header } from "../Header";
 
 type Props = {
-  children: JSX.Element;
+  children: JSX.Element | JSX.Element[];
 };
 
 export const DefaultTemplate = ({ children }: Props) => {
